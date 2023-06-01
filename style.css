@@ -1,0 +1,2614 @@
+@font-face{
+    font-family: 'dorimous';
+    src: url(dorimous.ttf);
+}
+@font-face{
+  font-family: 'cowboy';
+  src: url(cowboy.ttf);
+}
+
+
+body{
+    background-color: black;
+   margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+html {
+  overflow-x: hidden;
+}
+/* Анимация загрузки*/
+
+.loader{
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0;
+    z-index: 1;
+}
+.dot{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: dotAnimation 1s 3;
+    background-color: black;
+    margin: 0 10px;
+   z-index: 1;
+    
+}
+  
+  .dot1 {
+    animation-delay: 0.1s;
+    
+  }
+  
+  .dot2 {
+    animation-delay: 0.2s;
+  }
+  
+  .dot3 {
+    animation-delay: 0.3s;
+  }
+  
+  @keyframes dotAnimation {
+    0% {
+      transform: scale(0);
+      background-color: #fff;
+    }
+    50% {
+      transform: scale(1);
+      background-color: #fff;
+    }
+    100% {
+      transform: scale(0);
+      background-color: #fff;
+    }
+  }
+
+  @keyframes blinditem {
+    0% {
+    opacity: 0;  
+      }
+      50% {
+        opacity: 0;  
+      }
+      100% {
+       opacity: 0; 
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ТЕЛЕФОн*/
+
+/*Шапка сайта*/
+
+.header{
+    background-color: #ced6d0;
+    width: 100%;
+    height: 150px;
+    animation: blinditem 3.5s 1;
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+
+}
+h1{
+    margin: 0;
+    font-family: 'dorimous';
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    text-shadow: 4px 3px 5px #7e6996;
+   
+}
+
+
+
+
+  .headh{
+   
+    font-family: 'dorimous';
+    font-size: 26px;
+    color: black;
+    text-shadow: 2px 1px 2px #78c2b3;
+    position: absolute;
+    top: 60px;
+    left: 5%;
+  
+}
+.headh2{
+   
+  font-family: 'dorimous';
+  font-size: 26px;
+  color: black;
+  text-shadow: 2px 1px 2px #78c2b3;
+  position: absolute;
+  top: 82px;
+  right:5% ;
+ text-decoration: none;
+}
+
+
+
+
+
+
+/*ВЫПАДАЮЩЕЕ МЕНЮ*/
+.dropdown{
+
+  position: absolute;
+  width: 140px;
+  height: 120px;
+  background-color: #fff;
+  border: 2px solid black;
+  display: none;
+  top: 115px;
+  left: 4%;
+  z-index: 2;
+
+}
+.headh:hover{
+  height: 50px;
+  width: 140px;
+ text-decoration: underline;
+ margin-bottom: 0;
+}
+ 
+.dropdown a{
+  font-family: 'dorimous';
+  color: black;
+  text-decoration: none;
+  padding: 3px;
+  display: block;
+  font-size: 20px;
+  text-shadow: 1px 1px 3px #a0bceb;
+  line-height: 24px;
+  
+}
+ .container:hover .dropdown{
+ display: block;
+}
+
+
+.model:hover{
+ border: 3px solid black;
+ width: 140px;
+ background-color: #fff;
+ border-left: 7px solid  #2e333b;
+
+}
+.cyber:hover{
+  border: 3px solid black;
+  width: 140px;
+  background-color: #fff;
+  border-left: 7px solid  #2e333b;
+ 
+ }
+
+
+.historycl{
+  width: 100%;
+  height: 75px;
+  position: absolute;
+ top: 230px; 
+ z-index: 2;
+ animation: blinditem 3.5s 1;
+ margin: 0;
+}
+.history{
+  color: #9dc4c4;
+}
+
+
+
+
+.hparagraph{ 
+  color: #93a3a3;
+  width: 200px;
+  text-align: center;
+  font-size: 17px;
+  font-family: 'cowboy';
+}
+
+ 
+
+.mdlsh1{
+  color: #6ae6e6;
+  font-size: 60px;
+  margin-top: 130px;
+  animation: blinditem 3.5s 1;
+}
+
+
+.mdlsh{
+  font-family: monospace;
+  margin-top: 140px;
+  color: #9fc2bd;
+  text-shadow: 2px 2px 0px black;
+  font-size: 50px;
+  position: absolute;
+  top: 750px;
+  left: 20%;
+  animation: blinditem 3.5s 1;
+}
+
+
+.modelsh1 {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 970px;
+  
+}
+.modelstop1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 25px;
+  animation: blinditem 3.5s 1;
+}
+.modelstop2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 15px;
+ animation: blinditem 3.5s 1;
+ margin-bottom: 20px;
+}
+
+.modelstime1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 25px;
+  
+  animation: blinditem 3.5s 1;
+}
+.modelstime2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 15px;
+  
+ animation: blinditem 3.5s 1;
+ margin-bottom: 20px;
+}
+
+
+.modelshpow1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 25px;
+ 
+  animation: blinditem 3.5s 1;
+}
+.modelshpow2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 12px;
+
+ animation: blinditem 3.5s 1;
+}
+
+
+.photomodels {
+  width: 300px;
+  height: 200px;
+  background-image: url(https://images.drive.ru/i/0/5ea6dd8dec05c41134000004.jpg);
+  background-repeat: no-repeat;
+  background-size: 300px 200px;
+  margin-top: 360px;
+  margin-bottom: 50px;
+  z-index: 2;
+  animation: blinditem 3.5s 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.mdl3{
+  font-family: monospace;
+  margin-top: 140px;
+  color: #9fc2bd;
+  text-shadow: 2px 2px 0px black;
+  font-size: 50px;
+  position: absolute;
+  top: 1250px;
+  left: 20%;
+  animation: blinditem 3.5s 1;
+}
+
+
+.model3h1 {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 1470px;
+  
+}
+.model3top1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 25px;
+  animation: blinditem 3.5s 1;
+}
+.model3top2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 15px;
+ animation: blinditem 3.5s 1;
+ margin-bottom: 20px;
+}
+
+.model3time1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 25px;
+  
+  animation: blinditem 3.5s 1;
+}
+.model3time2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 15px;
+  
+ animation: blinditem 3.5s 1;
+ margin-bottom: 20px;
+}
+
+
+.model3hpow1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 25px;
+ 
+  animation: blinditem 3.5s 1;
+}
+.model3hpow2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 12px;
+
+ animation: blinditem 3.5s 1;
+}
+
+.photomodel3 {
+  width: 300px;
+  height: 200px;
+  background-image: url(https://hips.hearstapps.com/hmg-prod/images/2019-tesla-model-3-dual-motor-ltwrap-simari-980-edit-1651164162.jpg?crop=0.526xw:0.444xh;0.269xw,0.556xh&resize=1200:*);
+  background-repeat: no-repeat;
+  background-size: 300px 200px;
+  margin-top: 320px;
+  z-index: 2;
+  animation: blinditem 3.5s 1;
+}
+
+
+
+
+
+
+
+
+.mdlx{
+  font-family: monospace;
+  margin-top: 140px;
+  color: #9fc2bd;
+  text-shadow: 2px 2px 0px black;
+  font-size: 50px;
+  position: absolute;
+  top: 1750px;
+  left: 20%;
+  animation: blinditem 3.5s 1;
+}
+
+
+.modelxh1 {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 1970px;
+  
+}
+.modelxtop1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 25px;
+  animation: blinditem 3.5s 1;
+}
+.modelxtop2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 15px;
+ animation: blinditem 3.5s 1;
+ margin-bottom: 20px;
+}
+
+.modelxtime1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 25px;
+  
+  animation: blinditem 3.5s 1;
+}
+.modelxtime2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 15px;
+  
+ animation: blinditem 3.5s 1;
+ margin-bottom: 20px;
+}
+
+
+.modelxhpow1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 25px;
+ 
+  animation: blinditem 3.5s 1;
+}
+.modelxhpow2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 12px;
+
+ animation: blinditem 3.5s 1;
+}
+.photomodelx {
+  width: 300px;
+  height: 200px;
+  background-image: url(https://media.ed.edmunds-media.com/tesla/model-x/2021/oem/2021_tesla_model-x_4dr-suv_plaid_fq_oem_1_1600.jpg);
+  background-repeat: no-repeat;
+  background-size: 300px 200px;
+  margin-top: 300px;
+  z-index: 2;
+  animation: blinditem 3.5s 1;
+}
+
+
+
+
+
+
+.mdly{
+  font-family: monospace;
+  margin-top: 140px;
+  color: #9fc2bd;
+  text-shadow: 2px 2px 0px black;
+  font-size: 50px;
+  position: absolute;
+  top: 2250px;
+  left: 20%;
+  animation: blinditem 3.5s 1;
+}
+
+
+.modelyh1 {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 2470px;
+  
+}
+.modelytop1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 25px;
+  animation: blinditem 3.5s 1;
+}
+.modelytop2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 15px;
+ animation: blinditem 3.5s 1;
+ margin-bottom: 20px;
+}
+
+.modelytime1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 25px;
+  
+  animation: blinditem 3.5s 1;
+}
+.modelytime2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 15px;
+  
+ animation: blinditem 3.5s 1;
+ margin-bottom: 20px;
+}
+
+
+.modelyhpow1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 25px;
+ 
+  animation: blinditem 3.5s 1;
+}
+.modelyhpow2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 12px;
+
+ animation: blinditem 3.5s 1;
+}
+.photomodely {
+  width: 300px;
+  height: 200px;
+  background-image: url(https://www.ixbt.com/img/n1/news/2022/0/1/tesla-model-y-at-a-supercharging-station_large.jpg);
+  background-repeat: no-repeat;
+  background-size: 300px 200px;
+  margin-top: 70px;
+  z-index: 2;
+  animation: blinditem 3.5s 1;
+}
+
+
+.footer {
+ border-top: 2px solid #575251;
+ display: block;
+ background-color: black;
+ width: 100%;
+ height: 150px;
+ animation: blinditem 3.5s 1;
+ position: absolute;
+ top: 3000px;
+}
+.footerdesigner {
+ color: #575251;
+ font-family: Arial;
+ font-size: 18px;
+ padding-left: 9px;
+ font-family: 'cowboy';
+}
+
+.footercontacts {
+  color: #665f5f;
+  font-family: Arial;
+  font-size: 20px;
+  padding-left: 9px;
+  font-family: 'cowboy';
+}
+
+.footerrights {
+  color: #736c6c;
+  font-family: Arial;
+  font-size: 17px;
+  padding-left: 20px;
+}
+
+
+
+
+
+/*ТЕЛЕФОН СРЕДНИЙ*/
+@media (min-width: 375px){
+ 
+   .model:hover{
+    border: 3px solid black;
+    width: 195px;
+    background-color: #fff;
+    border-left: 7px solid  #2e333b;
+   
+   }
+   .cyber:hover{
+     border: 3px solid black;
+     width: 200px;
+     background-color: #fff;
+     border-left: 7px solid  #2e333b;
+    
+    }
+  .dropdown{
+    margin: 0;
+    position: absolute;
+    width: 175px;
+    height: 123px;
+    background-color: #fff;
+    border: 2px solid black;
+    display: none;
+    top: 125px;
+    left: 4%;
+    z-index: 2;
+  }
+  .dropdown a{
+    font-family: 'dorimous';
+    color: black;
+    text-decoration: none;
+    padding: 3px;
+    display: block;
+    font-size: 25px;
+    text-shadow: 1px 1px 3px #a0bceb;
+  }
+
+
+  .headh{
+   
+    font-family: 'dorimous';
+    font-size: 30px;
+    color: black;
+    text-shadow: 2px 1px 2px #78c2b3;
+    position: absolute;
+    top: 60px;
+    left: 5%;
+  
+}
+.headh2{
+   
+  font-family: 'dorimous';
+  font-size: 30px;
+  color: black;
+  text-shadow: 2px 1px 2px #78c2b3;
+  position: absolute;
+  top: 86px;
+  right:5% ;
+ 
+}
+
+
+
+
+
+
+
+.historycl{
+  width: 100%;
+  height: 75px;
+  position: absolute;
+ top: 230px; 
+ z-index: 2;
+ animation: blinditem 3.5s 1;
+ margin: 0;
+}
+.history{
+  color: #9dc4c4;
+}
+.hparagraph{ 
+  color: #93a3a3;
+  width: 210px;
+  text-align: center;
+  font-size: 17px;
+  font-family: 'cowboy';
+}
+
+
+
+
+
+
+
+
+
+
+.mdlsh1{
+  color: #6ae6e6;
+  font-size: 60px;
+  margin-top: 130px;
+  animation: blinditem 3.5s 1;
+}
+
+
+.mdlsh{
+  font-family: monospace;
+  margin-top: 140px;
+  color: #9fc2bd;
+  text-shadow: 2px 2px 0px black;
+  font-size: 54px;
+  position: absolute;
+  top: 750px;
+  left: 25%;
+  animation: blinditem 3.5s 1;
+}
+
+
+.modelsh1 {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 970px;
+  
+}
+.modelstop1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 25px;
+  animation: blinditem 3.5s 1;
+}
+.modelstop2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 15px;
+ animation: blinditem 3.5s 1;
+ margin-bottom: 20px;
+}
+
+.modelstime1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 25px;
+  
+  animation: blinditem 3.5s 1;
+}
+.modelstime2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 15px;
+  
+ animation: blinditem 3.5s 1;
+ margin-bottom: 20px;
+}
+
+
+.modelshpow1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 25px;
+ 
+  animation: blinditem 3.5s 1;
+}
+.modelshpow2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 12px;
+
+ animation: blinditem 3.5s 1;
+}
+
+
+.photomodels {
+  width: 300px;
+  height: 200px;
+  background-image: url(https://images.drive.ru/i/0/5ea6dd8dec05c41134000004.jpg);
+  background-repeat: no-repeat;
+  background-size: 300px 200px;
+  margin-top: 360px;
+  margin-bottom: 50px;
+  z-index: 2;
+  animation: blinditem 3.5s 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.mdl3{
+  font-family: monospace;
+  margin-top: 140px;
+  color: #9fc2bd;
+  text-shadow: 2px 2px 0px black;
+  font-size: 54px;
+  position: absolute;
+  top: 1250px;
+  left: 25%;
+  animation: blinditem 3.5s 1;
+}
+
+
+.model3h1 {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 1470px;
+  
+}
+.model3top1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 25px;
+  animation: blinditem 3.5s 1;
+}
+.model3top2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 15px;
+ animation: blinditem 3.5s 1;
+ margin-bottom: 20px;
+}
+
+.model3time1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 25px;
+  
+  animation: blinditem 3.5s 1;
+}
+.model3time2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 15px;
+  
+ animation: blinditem 3.5s 1;
+ margin-bottom: 20px;
+}
+
+
+.model3hpow1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 25px;
+ 
+  animation: blinditem 3.5s 1;
+}
+.model3hpow2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 12px;
+
+ animation: blinditem 3.5s 1;
+}
+
+.photomodel3 {
+  width: 300px;
+  height: 200px;
+  background-image: url(https://hips.hearstapps.com/hmg-prod/images/2019-tesla-model-3-dual-motor-ltwrap-simari-980-edit-1651164162.jpg?crop=0.526xw:0.444xh;0.269xw,0.556xh&resize=1200:*);
+  background-repeat: no-repeat;
+  background-size: 300px 200px;
+  margin-top: 320px;
+  z-index: 2;
+  animation: blinditem 3.5s 1;
+}
+
+
+
+
+
+
+
+
+.mdlx{
+  font-family: monospace;
+  margin-top: 140px;
+  color: #9fc2bd;
+  text-shadow: 2px 2px 0px black;
+  font-size: 54px;
+  position: absolute;
+  top: 1750px;
+  left: 25%;
+  animation: blinditem 3.5s 1;
+}
+
+
+.modelxh1 {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 1970px;
+  
+}
+.modelxtop1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 25px;
+  animation: blinditem 3.5s 1;
+}
+.modelxtop2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 15px;
+ animation: blinditem 3.5s 1;
+ margin-bottom: 20px;
+}
+
+.modelxtime1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 25px;
+  
+  animation: blinditem 3.5s 1;
+}
+.modelxtime2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 15px;
+  
+ animation: blinditem 3.5s 1;
+ margin-bottom: 20px;
+}
+
+
+.modelxhpow1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 25px;
+ 
+  animation: blinditem 3.5s 1;
+}
+.modelxhpow2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 12px;
+
+ animation: blinditem 3.5s 1;
+}
+.photomodelx {
+  width: 300px;
+  height: 200px;
+  background-image: url(https://media.ed.edmunds-media.com/tesla/model-x/2021/oem/2021_tesla_model-x_4dr-suv_plaid_fq_oem_1_1600.jpg);
+  background-repeat: no-repeat;
+  background-size: 300px 200px;
+  margin-top: 300px;
+  z-index: 2;
+  animation: blinditem 3.5s 1;
+}
+
+
+
+
+
+
+.mdly{
+  font-family: monospace;
+  margin-top: 140px;
+  color: #9fc2bd;
+  text-shadow: 2px 2px 0px black;
+  font-size: 54px;
+  position: absolute;
+  top: 2250px;
+  left: 25%;
+  animation: blinditem 3.5s 1;
+}
+
+
+.modelyh1 {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 2470px;
+  
+}
+.modelytop1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 25px;
+  animation: blinditem 3.5s 1;
+}
+.modelytop2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 15px;
+ animation: blinditem 3.5s 1;
+ margin-bottom: 20px;
+}
+
+.modelytime1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 25px;
+  
+  animation: blinditem 3.5s 1;
+}
+.modelytime2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 15px;
+  
+ animation: blinditem 3.5s 1;
+ margin-bottom: 20px;
+}
+
+
+.modelyhpow1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 25px;
+ 
+  animation: blinditem 3.5s 1;
+}
+.modelyhpow2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 12px;
+
+ animation: blinditem 3.5s 1;
+}
+.photomodely {
+  width: 300px;
+  height: 200px;
+  background-image: url(https://www.ixbt.com/img/n1/news/2022/0/1/tesla-model-y-at-a-supercharging-station_large.jpg);
+  background-repeat: no-repeat;
+  background-size: 300px 200px;
+  margin-top: 30px;
+  z-index: 2;
+  animation: blinditem 3.5s 1;
+}
+
+
+.footer {
+ border-top: 2px solid #575251;
+ display: block;
+ background-color: black;
+ width: 100%;
+ height: 150px;
+ animation: blinditem 3.5s 1;
+ position: absolute;
+ top: 3000px;
+}
+.footerdesigner {
+ color: #575251;
+ font-family: Arial;
+ font-size: 18px;
+ padding-left: 9px;
+ font-family: 'cowboy';
+}
+
+.footercontacts {
+  color: #665f5f;
+  font-family: Arial;
+  font-size: 20px;
+  padding-left: 9px;
+  font-family: 'cowboy';
+}
+
+.footerrights {
+  color: #736c6c;
+  font-family: Arial;
+  font-size: 17px;
+  padding-left: 20px;
+}
+}
+
+
+
+
+
+
+
+
+
+/*ПЛАНШЕТ*/
+
+@media (min-width: 768px){
+    .header{
+        background-color: #ced6d0;
+        width: 100%;
+        height: 120px;
+        animation: blinditem 3.5s 1;
+        position: fixed;
+        top: 0;
+    
+    }
+    h1{
+        margin: 0;
+        font-family: 'dorimous';
+        font-size: 60px;
+        text-align: center;
+        color: black;
+        text-shadow: 4px 3px 5px #7e6996;
+       
+    }
+
+.headh{
+   
+  font-family: 'dorimous';
+  font-size: 40px;
+  color: black;
+  text-shadow: 2px 1px 2px #78c2b3;
+  position: absolute;
+  top: 30px;
+  left: 10%;
+}
+.headh2{
+ 
+font-family: 'dorimous';
+font-size: 40px;
+color: black;
+text-shadow: 2px 1px 2px #78c2b3;
+position: absolute;
+top: 60px;
+right: 7%;
+}
+.dropdown{
+  margin: 0;
+  position: absolute;
+  width: 185px;
+  height: 123px;
+  background-color: #fff;
+  border: 2px solid black;
+  display: none;
+  top: 115px;
+  left: 9%;
+  }
+
+
+
+  .historycl{
+    width: 100%;
+    height: 75px;
+    position: absolute;
+   top: 230px; 
+   z-index: 2;
+   animation: blinditem 3.5s 1;
+   margin: 0;
+  }
+  .history{
+    color: #9dc4c4;
+  }
+  
+  
+  
+  
+  .hparagraph{ 
+    color: #93a3a3;
+    width: 240px;
+    font-size: 20px;
+    font-family: 'cowboy';
+    
+  }
+  
+
+
+
+
+
+
+
+  
+
+.mdlsh1{
+  color: #6ae6e6;
+  font-size: 70px;
+  margin-top: 130px;
+  animation: blinditem 3.5s 1;
+}
+
+
+.mdlsh{
+  font-family: monospace;
+  margin-top: 140px;
+  color: #9fc2bd;
+  text-shadow: 2px 2px 0px black;
+  font-size: 58px;
+  position: absolute;
+  top: 750px;
+  left: 35%;
+  animation: blinditem 3.5s 1;
+}
+
+
+.modelsh1 {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 1000px;
+  
+}
+.modelstop1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 30px;
+  animation: blinditem 3.5s 1;
+}
+.modelstop2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 20px;
+ animation: blinditem 3.5s 1;
+ margin-bottom: 35px;
+}
+
+.modelstime1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 30px;
+  animation: blinditem 3.5s 1;
+}
+.modelstime2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 20px;
+  
+ animation: blinditem 3.5s 1;
+ margin-bottom: 35px;
+}
+
+
+.modelshpow1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 30px;
+ 
+  animation: blinditem 3.5s 1;
+}
+.modelshpow2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 17px;
+
+ animation: blinditem 3.5s 1;
+}
+
+
+.photomodels {
+  width: 350px;
+  height: 250px;
+  background-image: url(https://images.drive.ru/i/0/5ea6dd8dec05c41134000004.jpg);
+  background-repeat: no-repeat;
+  background-size: 350px 250px;
+  margin-top: 470px;
+  margin-bottom: 50px;
+  z-index: 2;
+  animation: blinditem 3.5s 1;
+}
+
+
+
+
+
+
+
+
+.mdl3{
+  font-family: monospace;
+  margin-top: 140px;
+  color: #9fc2bd;
+  text-shadow: 2px 2px 0px black;
+  font-size: 58px;
+  position: absolute;
+  top: 1450px;
+  left: 35%;
+  animation: blinditem 3.5s 1;
+}
+
+
+.model3h1 {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 1700px;
+  
+}
+.model3top1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 30px;
+  animation: blinditem 3.5s 1;
+}
+.model3top2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 20px;
+ animation: blinditem 3.5s 1;
+ margin-bottom: 35px;
+}
+
+.model3time1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 30px;
+  animation: blinditem 3.5s 1;
+}
+.model3time2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 20px;
+  
+ animation: blinditem 3.5s 1;
+ margin-bottom: 35px;
+}
+
+
+.model3hpow1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 30px;
+ 
+  animation: blinditem 3.5s 1;
+}
+.model3hpow2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 17px;
+
+ animation: blinditem 3.5s 1;
+}
+
+
+
+.photomodel3 {
+  width: 350px;
+  height: 250px;
+  background-image: url(https://hips.hearstapps.com/hmg-prod/images/2019-tesla-model-3-dual-motor-ltwrap-simari-980-edit-1651164162.jpg?crop=0.526xw:0.444xh;0.269xw,0.556xh&resize=1200:*);
+  background-repeat: no-repeat;
+  background-size: 350px 250px;
+  margin-top: 470px;
+  margin-bottom: 50px;
+  z-index: 2;
+  animation: blinditem 3.5s 1;
+}
+
+
+
+
+
+
+
+
+
+.mdlx{
+  font-family: monospace;
+  margin-top: 140px;
+  color: #9fc2bd;
+  text-shadow: 2px 2px 0px black;
+  font-size: 58px;
+  position: absolute;
+  top: 2150px;
+  left: 35%;
+  animation: blinditem 3.5s 1;
+}
+
+
+.modelxh1 {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 2400px;
+  
+}
+.modelxtop1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 30px;
+  animation: blinditem 3.5s 1;
+}
+.modelxtop2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 20px;
+ animation: blinditem 3.5s 1;
+ margin-bottom: 35px;
+}
+
+.modelxtime1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 30px;
+  animation: blinditem 3.5s 1;
+}
+.modelxtime2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 20px;
+  
+ animation: blinditem 3.5s 1;
+ margin-bottom: 35px;
+}
+
+
+.modexhpow1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 30px;
+ 
+  animation: blinditem 3.5s 1;
+}
+.modelxhpow2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 17px;
+
+ animation: blinditem 3.5s 1;
+}
+
+
+.photomodelx {
+  width: 350px;
+  height: 250px;
+  background-image: url(https://media.ed.edmunds-media.com/tesla/model-x/2021/oem/2021_tesla_model-x_4dr-suv_plaid_fq_oem_1_1600.jpg);
+  background-repeat: no-repeat;
+  background-size: 350px 250px;
+  margin-top: 470px;
+  z-index: 2;
+  animation: blinditem 3.5s 1;
+}
+
+
+
+
+.mdly{
+  font-family: monospace;
+  margin-top: 140px;
+  color: #9fc2bd;
+  text-shadow: 2px 2px 0px black;
+  font-size: 58px;
+  position: absolute;
+  top: 2850px;
+  left: 35%;
+  animation: blinditem 3.5s 1;
+}
+
+
+.modelyh1 {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 3100px;
+  
+}
+.modelytop1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 30px;
+  animation: blinditem 3.5s 1;
+}
+.modelytop2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 20px;
+ animation: blinditem 3.5s 1;
+ margin-bottom: 35px;
+}
+
+.modelytime1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 30px;
+  animation: blinditem 3.5s 1;
+}
+.modelytime2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 20px;
+  
+ animation: blinditem 3.5s 1;
+ margin-bottom: 35px;
+}
+
+
+.modeyhpow1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 30px;
+ 
+  animation: blinditem 3.5s 1;
+}
+.modelyhpow2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 17px;
+
+ animation: blinditem 3.5s 1;
+}
+
+.photomodely {
+  width: 350px;
+  height: 250px;
+  background-image: url(https://www.ixbt.com/img/n1/news/2022/0/1/tesla-model-y-at-a-supercharging-station_large.jpg);
+  background-repeat: no-repeat;
+  background-size: 350px 250px;
+  margin-top: 70px;
+  z-index: 2;
+  animation: blinditem 3.5s 1;
+}
+
+
+.footer {
+ border-top: 2px solid #575251;
+ display: block;
+ background-color: black;
+ width: 100%;
+ height: 150px;
+ animation: blinditem 3.5s 1;
+ position: absolute;
+ top: 3700px;
+}
+.footerdesigner {
+ color: #575251;
+ font-family: Arial;
+ font-size: 23px;
+ padding-left: 40px;
+ font-family: 'cowboy';
+}
+
+.footercontacts {
+  color: #665f5f;
+  font-family: Arial;
+  font-size: 20px;
+  padding-left: 50px;
+  font-family: 'cowboy';
+}
+
+.footerrights {
+  color: #736c6c;
+  font-family: Arial;
+  font-size: 17px;
+  padding-left: 290px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*НОУТБУК*/
+
+@media (min-width: 1024px){
+    .header{
+        background-color: #ced6d0;
+        width: 100%;
+        height: 100px;
+        animation: blinditem 3.5s 1;
+        position: fixed;
+        top: 0px;
+        margin: 0;
+    
+    }
+    h1{
+        margin: 0;
+        font-family: 'dorimous';
+        font-size: 70px;
+        text-align: center;
+        color: black;
+        text-shadow: 4px 3px 5px #7e6996;
+        margin: 0;
+    }
+
+.headh{
+   
+  font-family: 'dorimous';
+  font-size: 50px;
+  color: black;
+  text-shadow: 2px 1px 2px #78c2b3;
+  position: absolute;
+  top: 19px;
+  left: 6%;
+  margin: 0;
+}
+.headh2{
+ 
+font-family: 'dorimous';
+font-size: 50px;
+color: black;
+text-shadow: 2px 1px 2px #78c2b3;
+position: absolute;
+top: 19px;
+right: 6%;
+margin: 0;
+}
+.dropdown{
+  margin: 0;
+  position: absolute;
+  width: 200px;
+  height: 123px;
+  background-color: #fff;
+  border: 2px solid black;
+  display: none;
+  top: 95px;
+  left: 6%;
+ }
+
+ .historycl{
+  width: 100%;
+  height: 75px;
+  position: absolute;
+ top: 230px; 
+ z-index: 2;
+ animation: blinditem 3.5s 1;
+ margin: 0;
+}
+.history{
+  color: #9dc4c4;
+  text-align: center;
+}
+
+
+
+.hparagraph{
+  width: 300px;
+  height: 500px;
+  text-align: center;
+  font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.mdlsh1{
+  color: #6ae6e6;
+  font-size: 82px;
+  margin-top: 220px;
+  animation: blinditem 3.5s 1;
+}
+
+
+.mdlsh{
+  font-family: monospace;
+  margin-top: 140px;
+  color: #9fc2bd;
+  text-shadow: 2px 2px 0px black;
+  font-size: 75px;
+  position: absolute;
+  top: 880px;
+  left: 39%;
+  animation: blinditem 3.5s 1;
+}
+
+
+.modelsh1 {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 1150px;
+  
+}
+.modelstop1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 38px;
+  animation: blinditem 3.5s 1;
+}
+.modelstop2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 28px;
+ animation: blinditem 3.5s 1;
+ margin-bottom: 48px;
+}
+
+.modelstime1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 38px;
+  animation: blinditem 3.5s 1;
+}
+.modelstime2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 28px;
+  
+ animation: blinditem 3.5s 1;
+ margin-bottom: 48px;
+}
+
+
+.modelshpow1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 38px;
+ 
+  animation: blinditem 3.5s 1;
+}
+.modelshpow2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 25px;
+
+ animation: blinditem 3.5s 1;
+}
+
+
+.photomodels {
+  width: 450px;
+  height: 350px;
+  background-image: url(https://images.drive.ru/i/0/5ea6dd8dec05c41134000004.jpg);
+  background-repeat: no-repeat;
+  background-size: 450px 350px;
+  margin-top: 570px;
+  margin-bottom: 50px;
+  z-index: 2;
+  animation: blinditem 3.5s 1;
+}
+
+
+
+
+
+
+
+
+.mdl3{
+  font-family: monospace;
+  margin-top: 140px;
+  color: #9fc2bd;
+  text-shadow: 2px 2px 0px black;
+  font-size: 75px;
+  position: absolute;
+  top: 1780px;
+  left: 39%;
+  animation: blinditem 3.5s 1;
+}
+
+
+.model3h1 {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 2050px;
+  
+}
+.model3top1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 38px;
+  animation: blinditem 3.5s 1;
+}
+.model3top2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 28px;
+ animation: blinditem 3.5s 1;
+ margin-bottom: 48px;
+}
+
+.model3time1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 38px;
+  animation: blinditem 3.5s 1;
+}
+.model3time2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 28px;
+  
+ animation: blinditem 3.5s 1;
+ margin-bottom: 48px;
+}
+
+
+.model3hpow1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 38px;
+ 
+  animation: blinditem 3.5s 1;
+}
+.model3hpow2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 25px;
+
+ animation: blinditem 3.5s 1;
+}
+
+
+.photomodel3 {
+  width: 450px;
+  height: 350px;
+  background-image: url(https://hips.hearstapps.com/hmg-prod/images/2019-tesla-model-3-dual-motor-ltwrap-simari-980-edit-1651164162.jpg?crop=0.526xw:0.444xh;0.269xw,0.556xh&resize=1200:*);
+  background-repeat: no-repeat;
+  background-size: 450px 350px;
+  margin-top: 570px;
+  margin-bottom: 50px;
+  z-index: 2;
+  animation: blinditem 3.5s 1;
+}
+
+
+
+
+
+
+
+
+.mdlx{
+  font-family: monospace;
+  margin-top: 140px;
+  color: #9fc2bd;
+  text-shadow: 2px 2px 0px black;
+  font-size: 75px;
+  position: absolute;
+  top: 2680px;
+  left: 39%;
+  animation: blinditem 3.5s 1;
+}
+
+
+.modelxh1 {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 2950px;
+  
+}
+.modelxtop1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 38px;
+  animation: blinditem 3.5s 1;
+}
+.modelxtop2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 28px;
+ animation: blinditem 3.5s 1;
+ margin-bottom: 48px;
+}
+
+.modelxtime1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 38px;
+  animation: blinditem 3.5s 1;
+}
+.modelxtime2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 28px;
+  
+ animation: blinditem 3.5s 1;
+ margin-bottom: 48px;
+}
+
+
+.modelxhpow1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 38px;
+ 
+  animation: blinditem 3.5s 1;
+}
+.modelxhpow2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 25px;
+
+ animation: blinditem 3.5s 1;
+}
+
+
+
+.photomodelx {
+  width: 450px;
+  height: 350px;
+  background-image: url(https://media.ed.edmunds-media.com/tesla/model-x/2021/oem/2021_tesla_model-x_4dr-suv_plaid_fq_oem_1_1600.jpg);
+  background-repeat: no-repeat;
+  background-size: 450px 350px;
+  margin-top: 570px;
+  z-index: 2;
+  animation: blinditem 3.5s 1;
+}
+
+
+
+.mdly{
+  font-family: monospace;
+  margin-top: 140px;
+  color: #9fc2bd;
+  text-shadow: 2px 2px 0px black;
+  font-size: 75px;
+  position: absolute;
+  top: 3580px;
+  left: 39%;
+  animation: blinditem 3.5s 1;
+}
+
+
+.modelyh1 {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 3850px;
+  
+}
+.modelytop1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 38px;
+  animation: blinditem 3.5s 1;
+}
+.modelytop2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 28px;
+ animation: blinditem 3.5s 1;
+ margin-bottom: 48px;
+}
+
+.modelytime1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 38px;
+  animation: blinditem 3.5s 1;
+}
+.modelytime2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 28px;
+  
+ animation: blinditem 3.5s 1;
+ margin-bottom: 48px;
+}
+
+
+.modelyhpow1{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 38px;
+ 
+  animation: blinditem 3.5s 1;
+}
+.modelyhpow2{
+  font-family: sans-serif;
+  color: white;
+  z-index: 2;
+  font-size: 25px;
+
+ animation: blinditem 3.5s 1;
+}
+
+.photomodely {
+  width: 450px;
+  height: 350px;
+  background-image: url(https://www.ixbt.com/img/n1/news/2022/0/1/tesla-model-y-at-a-supercharging-station_large.jpg);
+  background-repeat: no-repeat;
+  background-size: 450px 350px;
+  margin-top: 70px;
+  z-index: 2;
+  animation: blinditem 3.5s 1;
+}
+
+
+.footer {
+ border-top: 2px solid #575251;
+ display: block;
+ background-color: black;
+ width: 100%;
+ height: 250px;
+ animation: blinditem 3.5s 1;
+ position: absolute;
+ top: 4700px;
+}
+.footerdesigner {
+ color: #575251;
+ font-family: Arial;
+ font-size: 33px;
+ padding-left: 40px;
+ font-family: 'cowboy';
+}
+
+.footercontacts {
+  color: #665f5f;
+  font-family: Arial;
+  font-size: 30px;
+  padding-left: 50px;
+  font-family: 'cowboy';
+}
+
+.footerrights {
+  color: #736c6c;
+  font-family: Arial;
+  font-size: 27px;
+  padding-left: 290px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ПК*/
+
+@media (min-width: 1440px){
+  .header{
+      background-color: #ced6d0;
+      width: 100%;
+      height: 100px;
+      animation: blinditem 3.5s 1;
+      position: fixed;
+      top: 0px;
+      margin: 0;
+  
+  }
+  h1{
+      margin: 0;
+      font-family: 'dorimous';
+      font-size: 70px;
+      text-align: center;
+      color: black;
+      text-shadow: 4px 3px 5px #7e6996;
+      margin: 0;
+  }
+
+.headh{
+ 
+font-family: 'dorimous';
+font-size: 50px;
+color: black;
+text-shadow: 2px 1px 2px #78c2b3;
+position: absolute;
+top: 19px;
+left: 6%;
+margin: 0;
+}
+.headh2{
+
+font-family: 'dorimous';
+font-size: 50px;
+color: black;
+text-shadow: 2px 1px 2px #78c2b3;
+position: absolute;
+top: 19px;
+right: 6%;
+margin: 0;
+}
+.dropdown{
+margin: 0;
+position: absolute;
+width: 200px;
+height: 123px;
+background-color: #fff;
+border: 2px solid black;
+display: none;
+top: 95px;
+left: 6%;
+}
+
+.historycl{
+width: 100%;
+height: 75px;
+position: absolute;
+top: 230px; 
+z-index: 2;
+animation: blinditem 3.5s 1;
+margin: 0;
+}
+.history{
+color: #9dc4c4;
+text-align: center;
+}
+
+
+
+.hparagraph{
+width: 300px;
+height: 500px;
+text-align: center;
+font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.mdlsh1{
+color: #6ae6e6;
+font-size: 82px;
+margin-top: 220px;
+animation: blinditem 3.5s 1;
+}
+
+
+.mdlsh{
+font-family: monospace;
+margin-top: 140px;
+color: #9fc2bd;
+text-shadow: 2px 2px 0px black;
+font-size: 75px;
+position: absolute;
+top: 880px;
+left: 39%;
+animation: blinditem 3.5s 1;
+}
+
+
+.modelsh1 {
+width: 100%;
+height: 100px;
+position: absolute;
+top: 1150px;
+
+}
+.modelstop1{
+font-family: sans-serif;
+color: white;
+z-index: 2;
+font-size: 38px;
+animation: blinditem 3.5s 1;
+}
+.modelstop2{
+font-family: sans-serif;
+color: white;
+z-index: 2;
+font-size: 28px;
+animation: blinditem 3.5s 1;
+margin-bottom: 48px;
+}
+
+.modelstime1{
+font-family: sans-serif;
+color: white;
+z-index: 2;
+font-size: 38px;
+animation: blinditem 3.5s 1;
+}
+.modelstime2{
+font-family: sans-serif;
+color: white;
+z-index: 2;
+font-size: 28px;
+
+animation: blinditem 3.5s 1;
+margin-bottom: 48px;
+}
+
+
+.modelshpow1{
+font-family: sans-serif;
+color: white;
+z-index: 2;
+font-size: 38px;
+
+animation: blinditem 3.5s 1;
+}
+.modelshpow2{
+font-family: sans-serif;
+color: white;
+z-index: 2;
+font-size: 25px;
+
+animation: blinditem 3.5s 1;
+}
+
+
+.photomodels {
+width: 450px;
+height: 350px;
+background-image: url(https://images.drive.ru/i/0/5ea6dd8dec05c41134000004.jpg);
+background-repeat: no-repeat;
+background-size: 450px 350px;
+margin-top: 570px;
+margin-bottom: 50px;
+z-index: 2;
+animation: blinditem 3.5s 1;
+}
+
+
+
+
+
+
+
+
+.mdl3{
+font-family: monospace;
+margin-top: 140px;
+color: #9fc2bd;
+text-shadow: 2px 2px 0px black;
+font-size: 75px;
+position: absolute;
+top: 1780px;
+left: 39%;
+animation: blinditem 3.5s 1;
+}
+
+
+.model3h1 {
+width: 100%;
+height: 100px;
+position: absolute;
+top: 2050px;
+
+}
+.model3top1{
+font-family: sans-serif;
+color: white;
+z-index: 2;
+font-size: 38px;
+animation: blinditem 3.5s 1;
+}
+.model3top2{
+font-family: sans-serif;
+color: white;
+z-index: 2;
+font-size: 28px;
+animation: blinditem 3.5s 1;
+margin-bottom: 48px;
+}
+
+.model3time1{
+font-family: sans-serif;
+color: white;
+z-index: 2;
+font-size: 38px;
+animation: blinditem 3.5s 1;
+}
+.model3time2{
+font-family: sans-serif;
+color: white;
+z-index: 2;
+font-size: 28px;
+
+animation: blinditem 3.5s 1;
+margin-bottom: 48px;
+}
+
+
+.model3hpow1{
+font-family: sans-serif;
+color: white;
+z-index: 2;
+font-size: 38px;
+
+animation: blinditem 3.5s 1;
+}
+.model3hpow2{
+font-family: sans-serif;
+color: white;
+z-index: 2;
+font-size: 25px;
+
+animation: blinditem 3.5s 1;
+}
+
+
+.photomodel3 {
+width: 450px;
+height: 350px;
+background-image: url(https://hips.hearstapps.com/hmg-prod/images/2019-tesla-model-3-dual-motor-ltwrap-simari-980-edit-1651164162.jpg?crop=0.526xw:0.444xh;0.269xw,0.556xh&resize=1200:*);
+background-repeat: no-repeat;
+background-size: 450px 350px;
+margin-top: 570px;
+margin-bottom: 50px;
+z-index: 2;
+animation: blinditem 3.5s 1;
+}
+
+
+
+
+
+
+
+
+.mdlx{
+font-family: monospace;
+margin-top: 140px;
+color: #9fc2bd;
+text-shadow: 2px 2px 0px black;
+font-size: 75px;
+position: absolute;
+top: 2680px;
+left: 39%;
+animation: blinditem 3.5s 1;
+}
+
+
+.modelxh1 {
+width: 100%;
+height: 100px;
+position: absolute;
+top: 2950px;
+
+}
+.modelxtop1{
+font-family: sans-serif;
+color: white;
+z-index: 2;
+font-size: 38px;
+animation: blinditem 3.5s 1;
+}
+.modelxtop2{
+font-family: sans-serif;
+color: white;
+z-index: 2;
+font-size: 28px;
+animation: blinditem 3.5s 1;
+margin-bottom: 48px;
+}
+
+.modelxtime1{
+font-family: sans-serif;
+color: white;
+z-index: 2;
+font-size: 38px;
+animation: blinditem 3.5s 1;
+}
+.modelxtime2{
+font-family: sans-serif;
+color: white;
+z-index: 2;
+font-size: 28px;
+
+animation: blinditem 3.5s 1;
+margin-bottom: 48px;
+}
+
+
+.modelxhpow1{
+font-family: sans-serif;
+color: white;
+z-index: 2;
+font-size: 38px;
+
+animation: blinditem 3.5s 1;
+}
+.modelxhpow2{
+font-family: sans-serif;
+color: white;
+z-index: 2;
+font-size: 25px;
+
+animation: blinditem 3.5s 1;
+}
+
+
+
+.photomodelx {
+width: 450px;
+height: 350px;
+background-image: url(https://media.ed.edmunds-media.com/tesla/model-x/2021/oem/2021_tesla_model-x_4dr-suv_plaid_fq_oem_1_1600.jpg);
+background-repeat: no-repeat;
+background-size: 450px 350px;
+margin-top: 570px;
+z-index: 2;
+animation: blinditem 3.5s 1;
+}
+
+
+
+.mdly{
+font-family: monospace;
+margin-top: 140px;
+color: #9fc2bd;
+text-shadow: 2px 2px 0px black;
+font-size: 75px;
+position: absolute;
+top: 3580px;
+left: 39%;
+animation: blinditem 3.5s 1;
+}
+
+
+.modelyh1 {
+width: 100%;
+height: 100px;
+position: absolute;
+top: 3850px;
+
+}
+.modelytop1{
+font-family: sans-serif;
+color: white;
+z-index: 2;
+font-size: 38px;
+animation: blinditem 3.5s 1;
+}
+.modelytop2{
+font-family: sans-serif;
+color: white;
+z-index: 2;
+font-size: 28px;
+animation: blinditem 3.5s 1;
+margin-bottom: 48px;
+}
+
+.modelytime1{
+font-family: sans-serif;
+color: white;
+z-index: 2;
+font-size: 38px;
+animation: blinditem 3.5s 1;
+}
+.modelytime2{
+font-family: sans-serif;
+color: white;
+z-index: 2;
+font-size: 28px;
+
+animation: blinditem 3.5s 1;
+margin-bottom: 48px;
+}
+
+
+.modelyhpow1{
+font-family: sans-serif;
+color: white;
+z-index: 2;
+font-size: 38px;
+
+animation: blinditem 3.5s 1;
+}
+.modelyhpow2{
+font-family: sans-serif;
+color: white;
+z-index: 2;
+font-size: 25px;
+
+animation: blinditem 3.5s 1;
+}
+
+.photomodely {
+width: 450px;
+height: 350px;
+background-image: url(https://www.ixbt.com/img/n1/news/2022/0/1/tesla-model-y-at-a-supercharging-station_large.jpg);
+background-repeat: no-repeat;
+background-size: 450px 350px;
+margin-top: 70px;
+z-index: 2;
+animation: blinditem 3.5s 1;
+}
+
+
+.footer {
+border-top: 2px solid #575251;
+display: block;
+background-color: black;
+width: 100%;
+height: 250px;
+animation: blinditem 3.5s 1;
+position: absolute;
+top: 4700px;
+}
+.footerdesigner {
+color: #575251;
+font-family: Arial;
+font-size: 33px;
+padding-left: 40px;
+font-family: 'cowboy';
+}
+
+.footercontacts {
+color: #665f5f;
+font-family: Arial;
+font-size: 30px;
+padding-left: 50px;
+font-family: 'cowboy';
+}
+
+.footerrights {
+color: #736c6c;
+font-family: Arial;
+font-size: 27px;
+padding-left: 290px;
+}
+
+}
